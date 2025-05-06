@@ -13,6 +13,11 @@
     --ly-debug-bg-jumbotron: #ee82ee;
     --ly-debug-bg-banner-image: #1e90ff;
     --ly-debug-bg-banner-text: #ffc0cb;
+    --ly-debug-bg-download-banner: #228b22;
+    --ly-debug-gb-social-links: #f08080;
+    --ly-debug-gb-internal-links: #20b2aa;
+    --ly-debug-gb-end-page: #7fffd4;
+    --ly-debug-gb-end-page-buttons: rgb(255, 181, 192);
 }
 
 /* utils */
@@ -54,7 +59,25 @@
         background-color: var(--ly-debug-bg-banner-text);
     }
     #download-banner {
-        background-color: #228b22;
+        background-color: var(--ly-debug-bg-download-banner);
+    }
+    #social-links {
+        background-color: var(--ly-debug-gb-social-links);
+    }
+    .internal-links {
+        border: 1px dashed white;
+        background-color: var(--ly-debug-gb-internal-links);
+    }
+    #end-page-box {
+        background-color: var(--ly-debug-gb-end-page);
+    }
+    #footer-logo {
+        background-color: var(--ly-debug-gb-end-page-buttons);
+        padding: 5px;
+    }
+    #footer-button {
+        background-color: var(--ly-debug-gb-end-page-buttons);
+        padding: 5px;
     }
 }
 /* #endregion debug */
@@ -68,15 +91,18 @@ header {
     width: 100%;
     display: flex;
 }
-#logo {
+#nav-bar-logo {
     padding: 5px;
     width: 25%;
+    text-align: left;
 }
-#link {
+#nav-bar-link {
+    text-align: center;
     padding: 5px;
     width: 50%;
 }
-#login {
+#nav-bar-login {
+    text-align: right;
     padding: 5px;
     width: 25%;
 }
@@ -109,5 +135,39 @@ header {
 #download-banner {
     min-height: 500px;
     width: 100%;
+}
+
+#footer-link-box {
+    min-height: 400px;
+    padding: 10px 0px 20px 0px;
+    display: flex;
+    background-color: #23272a;
+    margin-bottom: 1px;
+}
+#footer-links {
+    display: flex;
+    width: 100%;
+}
+#social-links {
+    width: 34%;
+}
+#internal-links-box {
+    display: flex;
+    width: 100%;
+}
+.internal-links {
+    width: 25%;
+}
+#end-page {
+    background-color: #23272a;
+    min-height: 50px;
+    border: none;
+    padding-top: 15px;
+}
+#end-page-box {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 /* #endregion common */

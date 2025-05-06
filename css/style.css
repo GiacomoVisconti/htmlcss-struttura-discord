@@ -42,6 +42,12 @@
     #jumbotron {
         background-color: var(--ly-debug-bg-jumbotron);
     }
+    .banner-image {
+        background-color: var(--ly-debug-bg-banner-image);
+    }
+    .banner-text {
+        background-color: var(--ly-debug-bg-banner-text);
+    }
 }
 /* #endregion debug */
 
@@ -72,6 +78,21 @@ header {
 }
 #jumb-container {
     padding: 20px;
+}
+.banner-box {
+    padding: 20px;
+    display: flex;
+    min-height: 270px;
+}
+.banner {
+    display: flex;
+    width: 100%;
+}
+.banner-image {
+    width: 60%;
+}
+.banner-text {
+    width: 40%;
 }
 
 /* #endregion common */

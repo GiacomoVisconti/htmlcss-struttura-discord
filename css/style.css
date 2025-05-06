@@ -4,3 +4,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    /* debug variables */
+    --ly-debug-bg-header: rgb(172, 215, 230);
+    --ly-debug-bg-nav-bar: #daa520;
+    --ly-debug-bg-jumb-contaier: #00008b;
+    --ly-debug-bg-jumbotron: #ee82ee;
+    --ly-debug-bg-banner-image: #1e90ff;
+    --ly-debug-bg-banner-text: #ffc0cb;
+}
+
+/* utils */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container-small {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* #region debug */
+.debug {
+    * {
+        border: 1px dashed black;
+    }
+    header {
+        background-color: var(--ly-debug-bg-header);
+    }
+    #nav-bar {
+        background-color: var(--ly-debug-bg-nav-bar);
+    }
+}
+/* #endregion debug */
+
+/* #region common */
+header {
+    padding: 10px;
+}
+#nav-bar {
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+#logo {
+    padding: 5px;
+    width: 25%;
+}
+#link {
+    padding: 5px;
+    width: 50%;
+}
+#login {
+    padding: 5px;
+    width: 25%;
+}
+
+/* #endregion common */

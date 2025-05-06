@@ -24,7 +24,12 @@
     max-width: 800px;
     margin: 0 auto;
 }
-
+.bg-white {
+    background-color: white;
+}
+.bg-lightgrey {
+    background-color: #d3d3d3;
+}
 /* #region debug */
 .debug {
     * {
@@ -47,6 +52,9 @@
     }
     .banner-text {
         background-color: var(--ly-debug-bg-banner-text);
+    }
+    #download-banner {
+        background-color: #228b22;
     }
 }
 /* #endregion debug */
@@ -94,5 +102,12 @@ header {
 .banner-text {
     width: 40%;
 }
-
+#download-banner-box {
+    padding: 20px;
+    display: flex;
+}
+#download-banner {
+    min-height: 500px;
+    width: 100%;
+}
 /* #endregion common */

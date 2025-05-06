@@ -36,6 +36,12 @@
     #nav-bar {
         background-color: var(--ly-debug-bg-nav-bar);
     }
+    #jumb-container {
+        background: var(--ly-debug-bg-jumb-contaier);
+    }
+    #jumbotron {
+        background-color: var(--ly-debug-bg-jumbotron);
+    }
 }
 /* #endregion debug */
 
@@ -59,6 +65,13 @@ header {
 #login {
     padding: 5px;
     width: 25%;
+}
+#jumbotron {
+    display: flex;
+    min-height: 200px;
+}
+#jumb-container {
+    padding: 20px;
 }
 
 /* #endregion common */
